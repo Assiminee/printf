@@ -1,5 +1,5 @@
 #include "main.h"
-int _strlen_recursion(char *s);
+int _strlen(char *s);
 int _printc(va_list l);
 int _prints(va_list l);
 /**
@@ -67,19 +67,22 @@ int _printf(const char *format, ...)
 	return (length);
 }
 /**
- * _strlen_recursion - returns the length of a string
- * @s: pointer to char
- *
- * Return: length of s
+ * _strlen:gets length of string
+ * @s: string to check
+ * Return: length of string
  */
-int _strlen_recursion(char *s)
+int _strlen(char *s)
 {
-	if (*s)
+	int len = 0;
+
+	while (*s != '\0')
 	{
-		return (1 + _strlen_recursion(++s));
+		len++;
+		s++;
 	}
-	return (0);
+	return (len);
 }
+
 /**
  * _printc - prints a single char
  * @l: A list of variadic arguments
@@ -100,7 +103,7 @@ int _printc(va_list l)
 int _prints(va_list l)
 {
 	char *s = va_arg(l, char*);
-	int len = _strlen_recursion(s);
+	int len = _strlen(s);
 
 	if (s == NULL)
 	{
