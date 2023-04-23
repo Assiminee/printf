@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 	while (format && format[i])
 	{	
 		j = 0;
-		while (format[i] == " ")
+		while (format[i] == ' ')
 		{
 			i++;
 		}
