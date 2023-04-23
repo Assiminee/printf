@@ -44,6 +44,13 @@ int _printf(const char *format, ...)
 						length += ops[j].f(args);
 						break;
 					}
+					if (j == 1)
+					{
+						write(1, "%", 1);
+						write(1, &format[i], 1);
+						length += 2;
+						break;
+					}
 					j++;
 				}
 			}
