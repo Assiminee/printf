@@ -28,8 +28,12 @@ int _printf(const char *format, ...)
 		return (-1);
 	va_start(args, format);
 	while (format && format[i])
-	{
+	{	
 		j = 0;
+		while (format[i] == " ")
+		{
+			i++;
+		}
 		if (format[i] == '%')
 		{
 			i++;
