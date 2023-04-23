@@ -66,6 +66,12 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (length);
 }
+/**
+ * _strlen_recursion - returns the length of a string
+ * @s: pointer to char
+ *
+ * Return: length of s
+ */
 int _strlen_recursion(char *s)
 {
 	if (*s)
@@ -74,6 +80,11 @@ int _strlen_recursion(char *s)
 	}
 	return (0);
 }
+/**
+ * _printc - ...
+ * @l: ...
+ * Return: ...
+ */
 int _printc(va_list l)
 {
 	int c = va_arg(l, int);
@@ -81,6 +92,11 @@ int _printc(va_list l)
 	write(1, &c, 1);
 	return (1);
 }
+/**
+ * _prints - ...
+ * @l: ...
+ * Return: ...
+ */
 int _prints(va_list l)
 {
 	char *s = va_arg(l, char*);
