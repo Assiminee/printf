@@ -27,13 +27,11 @@ int _printf(const char *format, ...)
 	if (format[0] == '%' && format[1] == '\0')
 		return (-1);
 	va_start(args, format);
+	while (format[i] == ' ')
+		i++;
 	while (format && format[i])
 	{	
 		j = 0;
-		while (format[i] == ' ')
-		{
-			i++;
-		}
 		if (format[i] == '%')
 		{
 			i++;
