@@ -49,13 +49,6 @@ int _printf(const char *format, ...)
 						length += ops[j].f(args);
 						break;
 					}
-					if(format[i+1] == *(ops[j].c))
-					{
-						length += ops[j].f(args);
-						length++;
-						i++;
-						break;
-					}
 					if (j == 3)
 					{
 						write(1, "%", 1);
