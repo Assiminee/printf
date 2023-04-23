@@ -87,7 +87,8 @@ int _prints(va_list l)
 	int len = _strlen_recursion(s);
 	if (s == NULL)
 	{
-		return (-1);
+		write(1, "(nil)", 5);
+		return (5);
 	}
 	write(1, s, len);
 	return (len);
