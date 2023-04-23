@@ -47,7 +47,7 @@ int _printf(const char *format, ...)
 						length += ops[j].f(args);
 						break;
 					}
-					if (j == 1)
+					if (j == 3)
 					{
 						write(1, "%", 1);
 						write(1, &format[i], 1);
@@ -137,7 +137,7 @@ int _printint(va_list l)
 	{
 		write(1, "-", 1);
 		n *=-1;
-		length ++;
+		length++;
 	}
 	temp = n;
 	while(temp / 10)
