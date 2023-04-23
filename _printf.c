@@ -15,6 +15,8 @@ int _printf(const char *format, ...)
 	operations ops[] = {
 		{"c", _printc},
 		{"s", _prints},
+		{"d", _printint},
+		{"i", _printint},
 		{NULL, NULL}
 	};
 	va_list args;
