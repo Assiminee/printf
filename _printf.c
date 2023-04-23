@@ -108,13 +108,11 @@ int _printc(va_list l)
 int _prints(va_list l)
 {
 	char *s = va_arg(l, char*);
-	int len = _strlen(s);
+	int len;
 
 	if (s == NULL)
-	{
-		write(1, "(nil)", 5);
-		return (5);
-	}
+		s = "(null)";
+	len = _strlen(s);
 	write(1, s, len);
 	return (len);
 }
