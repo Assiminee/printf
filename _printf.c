@@ -81,9 +81,9 @@ int _strlen_recursion(char *s)
 	return (0);
 }
 /**
- * _printc - ...
- * @l: ...
- * Return: ...
+ * _printc - prints a single char
+ * @l: A list of variadic arguments
+ * Return: 1
  */
 int _printc(va_list l)
 {
@@ -93,9 +93,9 @@ int _printc(va_list l)
 	return (1);
 }
 /**
- * _prints - ...
- * @l: ...
- * Return: ...
+ * _prints - prints a string
+ * @l: A list of variadic arguments
+ * Return: length of string
  */
 int _prints(va_list l)
 {
