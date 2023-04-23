@@ -68,6 +68,7 @@ int _printf(const char *format, ...)
 			i++;
 		}
 	}
+	write(1, "\n", 1);
 	va_end(args);
 	return (length);
 }
