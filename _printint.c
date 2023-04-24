@@ -6,9 +6,9 @@
  */
 int _printint(va_list l)
 {
-	int n = va_arg(l, int);
-	int temp;
-	int r = 1;
+	int n = va_arg(l, unsigned int);
+	unsigned int temp;
+	unsigned int r = 1;
 	char num;
 	int length = 0;
 
