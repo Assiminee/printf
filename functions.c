@@ -32,6 +32,7 @@ int handle_spec(const char *format, int i, va_list args)
 		{"s", _prints},
 		{"d", _printint},
 		{"i", _printint},
+		{"b", _printbin},
 		{NULL, NULL}
 	};
 

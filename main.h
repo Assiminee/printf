@@ -19,4 +19,5 @@ int _printp();
 int _regchar(char c);
 int _invalid_spec(char c);
 int handle_spec(const char *format, int i, va_list args);
+int _printbin(va_list l);
 #endif
