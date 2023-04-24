@@ -37,4 +37,5 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 		}
 	}
 	r /= base;
+return (length);
 }
