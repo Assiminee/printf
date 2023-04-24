@@ -6,7 +6,7 @@
  */
 int _printint(va_list l)
 {
-	int n = va_arg(l, unsigned int);
+	int n = va_arg(l, int);
 	unsigned int temp;
 	unsigned int r = 1;
 	char num;
@@ -22,6 +22,7 @@ int _printint(va_list l)
 	{
 		write(1, "-", 1);
 		n *= -1;
+		n = (unsigned int)(n);
 		temp = n;
 		length++;
 	}
