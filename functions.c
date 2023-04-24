@@ -45,7 +45,7 @@ int handle_spec(const char *format, int i, va_list args)
 			l += ops[j].f(args);
 			break;
 		}
-		if (j == 3)
+		if (j == 4)
 		{
 			write(1, "%", 1);
 			write(1, &format[i], 1);
