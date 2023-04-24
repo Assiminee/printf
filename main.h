@@ -15,4 +15,5 @@ int _printint(va_list l);
 int _prints(va_list l);
 int _printc(va_list l);
 int _strlen(char *s);
+int _printp();
 #endif

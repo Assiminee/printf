@@ -18,9 +18,7 @@ int _printf(const char *format, ...)
 	};
 	va_list args;
 
-	if (format == NULL)
-		return (-1);
-	if (format[0] == '%' && format[1] == '\0')
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(args, format);
 	while (format[i] == ' ')
@@ -33,8 +31,7 @@ int _printf(const char *format, ...)
 			i++;
 			if (format[i] == '%')
 			{
-				write(1, &format[i], 1);
-				length++;
+				length += _printp();
 			}
 			else
 			{
