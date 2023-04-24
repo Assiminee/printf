@@ -15,3 +15,9 @@ int _printp()
  *@tab: digits for conversion
  @base : represents the base in which we print
  */
+int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
+{
+	unsigned int i;
+	unsigned int num2;
+	int length = 0;
+
