@@ -20,7 +20,7 @@ int _printint(va_list l)
 	if (n < 0)
 	{
 		write(1, "-", 1);
-		n *= -1;
+		n = (unsigned int)(-n);
 		length++;
 	}
 	temp = n;
