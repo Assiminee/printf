@@ -76,7 +76,6 @@ int _invalid_spec(char c)
 {
 	return (_printp() + _regchar(c));
 }
-#include "main.h"
 /**
  * _regchar - prints regular char
  * @c: char to print

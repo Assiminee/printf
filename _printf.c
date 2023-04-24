@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				length += handle_spec(format, i, length, args);
+				length += handle_spec(format, i, args);
 			}
 			i++;
 		}

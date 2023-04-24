@@ -18,5 +18,5 @@ int _strlen(char *s);
 int _printp();
 int _regchar(char c);
 int _invalid_spec(char c);
-int handle_spec(const char *format,int i,int length, va_list args);
+int handle_spec(const char *format, int i, va_list args);
 #endif

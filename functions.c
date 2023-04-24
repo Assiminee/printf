@@ -23,20 +23,20 @@ int _strlen(char *s)
  * va_list args: a list
  * return: length
  */
-int handle_spec(const char *format, operations ops[], int i, int length, va_list args)
+int handle_spec(const char *format, int i, va_list args)
 {
 	int l;
 	int j;
-	j = 0;
-	l = 0;
 	operations ops[] = {
 		{"c", _printc},
 		{"s", _prints},
 		{"d", _printint},
 		{"i", _printint},
 		{NULL, NULL}
-	}
+	};
 
+	j = 0;
+	l = 0;
 	while (ops[j].c)
 	{
 		if (format[i] == *(ops[j].c))
