@@ -7,12 +7,11 @@
 int _printint(va_list l)
 {
 	int n = va_arg(l, int);
-	unsigned int temp;
-	unsigned int r = 1;
+	int temp;
+	int r = 1;
 	char num;
 	int length = 0;
 
-	temp = n;
 	if (n == 0)
 	{
 		write(1, "0", 1);
@@ -22,10 +21,10 @@ int _printint(va_list l)
 	{
 		write(1, "-", 1);
 		n *= -1;
-		n = (unsigned int)(n);
 		temp = n;
 		length++;
 	}
+	temp = n;
 	while (temp / 10)
 	{
 		r *= 10;
