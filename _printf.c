@@ -100,19 +100,3 @@ int _printc(va_list l)
 	write(1, &c, 1);
 	return (1);
 }
-/**
- * _prints - prints a string
- * @l: A list of variadic arguments
- * Return: length of string
- */
-int _prints(va_list l)
-{
-	char *s = va_arg(l, char*);
-	int len;
-
-	if (s == NULL)
-		s = "(null)";
-	len = _strlen(s);
-	write(1, s, len);
-	return (len);
-}

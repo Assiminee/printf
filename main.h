@@ -12,4 +12,5 @@ typedef struct operations
     int (*f)(va_list l);
 }operations;
 int _printint(va_list l);
+int _prints(va_list l);
 #endif
