@@ -44,9 +44,7 @@ int _printf(const char *format, ...)
 					}
 					if (j == 3)
 					{
-						write(1, "%", 1);
-						write(1, &format[i], 1);
-						length += 2;
+						length += _invalid_spec(format[i]);
 						break;
 					}
 					j++;
@@ -56,8 +54,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			write(1, &format[i], 1);
-			length++;
+			length += _regchar(format[i]);
 			i++;
 		}
 	}

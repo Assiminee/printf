@@ -16,4 +16,6 @@ int _prints(va_list l);
 int _printc(va_list l);
 int _strlen(char *s);
 int _printp();
+int _regchar(char c);
+int _invalid_spec(char c);
 #endif
