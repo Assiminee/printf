@@ -6,6 +6,11 @@
 #include <stdarg.h>
 #include <unistd.h>
 int _printf(const char *format, ...);
+/**
+ * struct operations - Struct operations
+ * @c: The conversion specifier
+ * @f: The function pointer
+ */
 typedef struct operations
 {
 	char *c;
