@@ -37,14 +37,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			if (format[i] <= 32 || format[i] >= 127)
-			{
-				length += nonPrintableChar(format[i]);
-			}
-			else
-			{
-				length += _regchar(format[i]);
-			}
+			length += _regchar(format[i]);
 			i++;
 		}
 	}

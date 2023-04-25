@@ -2,16 +2,38 @@
 
 /**
  * nonPrintableChar - handles non-printable characters
- * @value: the ascii value of the non-printable character
+ * @l: A list of variadic arguments
  *
  * Return: number of characters printed
  */
 
-int nonPrintableChar(int value)
+int nonPrintableChar(va_list l)
 {
-	write(1, "\\x", 2);
-	_print_in_base(value, 16, "0123456789ABCDEF");
-	return (4);
+	char *s;
+	int i;
+	int length;
+
+	s = va_arg(l, char *);
+	i = 0;
+	length = 0;
+	if (s == NULL)
+		s = "(null)";
+	while (s && s[i])
+	{
+		if (s[i] <= 32 && s[i] >= 127)
+		{
+			write(1, "\\x", 2);
+			_print_in_base(s[i], 16, "0123456789ABCDEF");
+			length += 4;
+		}
+		else
+		{
+			write(1, &s[i], 1);
+			length++;
+		}
+		i++;
+	}
+	return (length);
 }
 
 /**

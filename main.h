@@ -33,5 +33,5 @@ int _printX(va_list l);
 int _printO(va_list l);
 int _printbin(va_list l);
 int _printU(va_list l);
-int nonPrintableChar(int value);
+int nonPrintableChar(va_list l);
 #endif
