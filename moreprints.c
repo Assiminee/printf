@@ -24,7 +24,7 @@ int nonPrintableChar(va_list l)
 		{
 			write(1, "\\x", 2);
 			_print_in_base(s[i], 16, "0123456789ABCDEF");
-			length += 4;
+			length += 3;
 		}
 		else
 		{
