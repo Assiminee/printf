@@ -28,7 +28,7 @@ int _prints(va_list l)
 	char *s;
 	int len;
 
-	s = va_arg(l, char *)
+	s = va_arg(l, char *);
 	if (s == NULL)
 		s = "(null)";
 	len = _strlen(s);
