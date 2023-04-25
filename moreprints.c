@@ -9,12 +9,14 @@
  *
  * Return: number of characters printed
  */
+
 int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 {
 	unsigned int i;
 	unsigned int num2;
-	int length = 0;
+	int length;
 
+	length = 0;
 	while (r)
 	{
 		i = 0;
@@ -42,13 +44,17 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
  *
  * Return: length
  */
+
 int _print_in_base(unsigned int n, unsigned int base, char tab[])
 {
-	unsigned int tmp = n;
-	int length = 0;
-	int r = 1;
+	unsigned int tmp;
+	int length;
+	int r;
 	char num;
 
+	tmp = n;
+	length = 0;
+	r = 1;
 	while (tmp / base)
 	{
 		r *= base;

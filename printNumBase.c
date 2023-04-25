@@ -6,6 +6,7 @@
  *
  * Return: length
  */
+
 int _printbin(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -19,6 +20,7 @@ int _printbin(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _printx(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -32,6 +34,7 @@ int _printx(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _printX(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -45,6 +48,7 @@ int _printX(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _printO(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);

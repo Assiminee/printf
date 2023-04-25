@@ -5,6 +5,7 @@
  *
  * Return: 1
  */
+
 int _printp(void)
 {
 	write(1, "%", 1);
@@ -17,10 +18,12 @@ int _printp(void)
  *
  * Return: length of string
  */
+
 int _strlen(char *s)
 {
-	int len = 0;
+	int len;
 
+	len = 0;
 	while (*s != '\0')
 	{
 		len++;
@@ -37,6 +40,7 @@ int _strlen(char *s)
  *
  * Return: number of characters printed
  */
+
 int handle_spec(const char *format, int i, va_list args)
 {
 	int l;
@@ -81,14 +85,18 @@ int handle_spec(const char *format, int i, va_list args)
  *
  * Return: length of digits printed
  */
+
 int _printU(va_list l)
 {
-	unsigned int  n = va_arg(l, unsigned int);
+	unsigned int  n;
 	unsigned int temp;
-	unsigned int r = 1;
+	unsigned int r;
 	char num;
-	int length = 0;
+	int length;
 
+	n = va_arg(l, unsigned int);
+	r = 1;
+	length = 0;
 	if (n == 0)
 	{
 		write(1, "0", 1);

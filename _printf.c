@@ -6,12 +6,15 @@
  *
  * Return: number of characters printed
  */
+
 int _printf(const char *format, ...)
 {
-	int i = 0;
-	int length = 0;
+	int i;
+	int length;
 	va_list args;
 
+	i = 0;
+	length = 0;
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(args, format);

@@ -6,10 +6,12 @@
  *
  * Return: 1
  */
+
 int _printc(va_list l)
 {
-	int c = va_arg(l, int);
+	int c;
 
+	c = va_arg(l, int);
 	write(1, &c, 1);
 	return (1);
 }
@@ -20,11 +22,13 @@ int _printc(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _prints(va_list l)
 {
-	char *s = va_arg(l, char*);
+	char *s;
 	int len;
 
+	s = va_arg(l, char *)
 	if (s == NULL)
 		s = "(null)";
 	len = _strlen(s);
@@ -38,14 +42,18 @@ int _prints(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _printint(va_list l)
 {
-	int n = va_arg(l, unsigned int);
+	int n;
 	unsigned int temp;
-	unsigned int r = 1;
+	unsigned int r;
 	char num;
-	int length = 0;
+	int length;
 
+	n = va_arg(l, unsigned int);
+	r = 1;
+	length = 0;
 	if (n == 0)
 	{
 		write(1, "0", 1);
@@ -80,6 +88,7 @@ int _printint(va_list l)
  *
  * Return: number of characters printed
  */
+
 int _invalid_spec(char c)
 {
 	return (_printp() + _regchar(c));
@@ -91,6 +100,7 @@ int _invalid_spec(char c)
  *
  * Return: 1
  */
+
 int _regchar(char c)
 {
 	write(1, &c, 1);
