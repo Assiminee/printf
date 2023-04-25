@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _printp - prints the percent sign
- * return: int
+ * Return: int
  */
 int _printp(void)
 {
@@ -78,7 +78,7 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 /**
  *_printbin - prints a number in binary
  * @l: A list of variadic arguments
- *return: length of string printed
+ *Return: length of string printed
  */
 int _printbin(va_list l)
 {
@@ -89,7 +89,7 @@ int _printbin(va_list l)
 /**
  *_printx - prints num in hexa lowercase
  * @l: A list of variadic arguments
- *return: length of string printed
+ *Return: length of string printed
  */
 int _printx(va_list l)
 {
@@ -100,7 +100,7 @@ int _printx(va_list l)
 /**
  *_printX — prints num in hexa uppercase
  * @l: A list of variadic arguments
- *return: Iength of string printed
+ *Return: Iength of string printed
  */
 int _printX(va_list l)
 {
