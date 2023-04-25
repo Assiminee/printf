@@ -19,8 +19,7 @@ int _strlen(char *s)
  * handle_spec - handles speifiers
  * @format: string with format specifier
  * @i: index of string
- * @length: length of printf function
- * @va_list args: a list
+ * @args: a list of arguments
  * Return: length
  */
 int handle_spec(const char *format, int i, va_list args)
