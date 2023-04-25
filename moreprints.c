@@ -97,3 +97,9 @@ int _printx(va_list l)
 	
 	return (_print_in_base(num, 16, "0123456789abcdef"));
 }
+/**
+ * printX — prints num in hexa uppercase
+ * @l: A list of variadic arguments
+ * return: Iength of string printed
+ */
+
