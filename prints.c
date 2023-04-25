@@ -3,6 +3,7 @@
 /**
  * _printc - prints a single char
  * @l: A list of variadic arguments
+ *
  * Return: 1
  */
 int _printc(va_list l)
@@ -16,6 +17,7 @@ int _printc(va_list l)
 /**
  * _prints - prints a string
  * @l: A list of variadic arguments
+ *
  * Return: number of characters printed
  */
 int _prints(va_list l)
@@ -33,6 +35,7 @@ int _prints(va_list l)
 /**
  * _printint - prints an int
  * @l: list of variating arguments
+ *
  * Return: number of characters printed
  */
 int _printint(va_list l)
@@ -74,6 +77,7 @@ int _printint(va_list l)
 /**
  * _invalid_spec - printd invalid specifier
  * @c: Character to print
+ *
  * Return: number of characters printed
  */
 int _invalid_spec(char c)
@@ -84,6 +88,7 @@ int _invalid_spec(char c)
 /**
  * _regchar - prints regular char
  * @c: char to print
+ *
  * Return: 1
  */
 int _regchar(char c)

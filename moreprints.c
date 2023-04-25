@@ -6,6 +6,7 @@
  * @r: highest power of the given base
  * @tab: character representations of the digits in the given base
  * @base : base in which to convert a given number
+ *
  * Return: number of characters printed
  */
 int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
@@ -38,6 +39,7 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
  * @n: the number to be printed in the specified base
  * @base: the base in which the number n is printed
  * @tab: character representations of the digits in the given base
+ *
  * Return: length
  */
 int _print_in_base(unsigned int n, unsigned int base, char tab[])

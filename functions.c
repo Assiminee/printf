@@ -2,6 +2,7 @@
 
 /**
  * _printp - prints the percent sign
+ *
  * Return: 1
  */
 int _printp(void)
@@ -13,6 +14,7 @@ int _printp(void)
 /**
  * _strlen - gets length of string
  * @s: string to check
+ *
  * Return: length of string
  */
 int _strlen(char *s)
@@ -32,6 +34,7 @@ int _strlen(char *s)
  * @format: string with format specifiers
  * @i: index of format specifier
  * @args: a list of variadic arguments
+ *
  * Return: number of characters printed
  */
 int handle_spec(const char *format, int i, va_list args)
@@ -75,6 +78,7 @@ int handle_spec(const char *format, int i, va_list args)
 /**
  * _printU - prints an unsigned int
  * @l: A list of variadic arguments
+ *
  * Return: length of digits printed
  */
 int _printU(va_list l)
