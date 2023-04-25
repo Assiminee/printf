@@ -14,6 +14,7 @@ int _printp()
  *@r: digit to be orint next
  *@tab: digits for conversion
  @base : represents the base in which we print
+ *Return: Length
  */
 int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 {
@@ -39,3 +40,10 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 	}
 	return (length);
 }
+/**
+ *_print_in_base - prints in a base
+ *@n: the number to be printed in the specified base
+ *@base: the base in which the number n is printed
+ *@tab: contains digits for conversion
+ *Return: length
+ */
