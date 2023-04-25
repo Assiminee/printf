@@ -25,5 +25,5 @@ int _printx(va_list l);
 int _printX(va_list l);
 int _printO(va_list l);
 int _printbin(va_list l);
-int _printU(va_list, l);
+int _printU(va_list l);
 #endif
