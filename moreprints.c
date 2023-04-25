@@ -85,4 +85,9 @@ int _printbin(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	return (_print_in_base(num, 2, " "));
 }
+/**
+ * _printx - prints num in hexa lowercase
+ * @l: A list of variadic arguments
+ * return: length of string printed
+ */
 
