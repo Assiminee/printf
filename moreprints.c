@@ -26,7 +26,6 @@ int nonPrintableChar(va_list l)
 			if (s[i] <= 15)
 			{
 				write(1, "0", 1);
-				length++;
 			}
 			_print_in_base(s[i], 16, "0123456789ABCDEF");
 			length += 4;
