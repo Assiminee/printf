@@ -28,7 +28,7 @@ int nonPrintableChar(va_list l)
 				write(1, "0", 1);
 			}
 			_print_in_base(s[i], 16, "0123456789ABCDEF");
-			length += 3;
+			length += 4;
 		}
 		else
 		{
