@@ -53,5 +53,24 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	int length = 0;
 	int r = 1;
 	char num;
-
-
+	
+	while (tmp / base)
+	{
+		r *= base;tmp /= base;
+	}
+	if (base == 16)
+	{
+		_printsixteen(n, r, tab, base);
+	}
+	else if (base == 2)
+	{
+		while (r)
+		{
+			num = (n / r) % base + '0';
+			write(1, &num, 1);
+			length++;
+			r /= base;
+		}
+	}
+	return (length);
+}
