@@ -75,3 +75,9 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	}
 	return (length);
 }
+/**
+ * _printbin - prints a number in binary
+ * @l: A list of variadic arguments
+ * return: length of string printed
+ */
+
