@@ -102,4 +102,9 @@ int _printx(va_list l)
  * @l: A list of variadic arguments
  * return: Iength of string printed
  */
-
+int _printX(va_list l)
+{
+	unsigned int num = va_arg(l, unsigned int);
+	
+	return (_print_in_base(num, 16, "0123456789ABCDEF"));
+}
