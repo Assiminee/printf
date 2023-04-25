@@ -18,8 +18,6 @@ int nonPrintableChar(va_list l)
 	length = 0;
 	if (s == NULL)
 		s = "(null)";
-	if (s[i] < 0)
-		s[i] += 256;
 	while (s && s[i])
 	{
 		if (s[i] <= 32 || s[i] >= 127)
