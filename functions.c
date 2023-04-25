@@ -75,7 +75,7 @@ int handle_spec(const char *format, int i, va_list args)
  */
 int _printU(va_list l)
 {
-	int n = va_arg(l, unsigned int);
+	unsigned int n = va_arg(l, unsigned int);
 	unsigned int temp;
 	unsigned int r = 1;
 	char num;
