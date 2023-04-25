@@ -20,7 +20,7 @@ int nonPrintableChar(va_list l)
 		s = "(null)";
 	while (s && s[i])
 	{
-		if (s[i] > 0 && (s[i] <= 32 || s[i] >= 127))
+		if (s[i] <= 32 || s[i] >= 127)
 		{
 			write(1, "\\x", 2);
 			if (s[i] <= 15)
