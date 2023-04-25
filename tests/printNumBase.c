@@ -24,7 +24,7 @@ int _printx(va_list l)
 /**
  *_printX — prints num in hexa uppercase
  * @l: A list of variadic arguments
- *Return: Iength 
+ *Return: Iength
  */
 int _printX(va_list l)
 {
@@ -39,7 +39,7 @@ int _printX(va_list l)
  */
 int _printO(va_list l)
 {
-	unsigned int num = va_arg(l, unsigned int);
+	unsigned int num = va_arg(1, unsigned int);
 
 	return (_print_in_base(num, 8, " "));
 }
