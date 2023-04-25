@@ -49,3 +49,9 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
  */
 int _print_in_base(unsigned int n, unsigned int base, char tab[])
 {
+	unsigned int tmp;
+	tmp = n;
+	int length = 0;
+	int r = 1;
+	char num;
+
