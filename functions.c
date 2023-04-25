@@ -1,5 +1,14 @@
 #include "main.h"
 /**
+ * _printp - prints the percent sign
+ * Return: int
+ */
+int _printp(void)
+{
+	write(1, "%", 1);
+	return (1);
+}
+/**
  * _strlen:gets length of string
  * @s: string to check
  * Return: length of string
