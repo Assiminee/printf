@@ -44,6 +44,7 @@ int handle_spec(const char *format, int i, va_list args)
 		{"x", _printx},
 		{"X", _printX},
 		{"o", _printO},
+		{"u", _printU},
 		{NULL, NULL}
 	};
 
