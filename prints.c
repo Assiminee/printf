@@ -14,7 +14,7 @@ int _printc(va_list l)
 /**
  * _prints - prints a string
  * @l: A list of variadic arguments
- * Return: length of string
+ * Return: number of characters printed
  */
 int _prints(va_list l)
 {
@@ -30,7 +30,7 @@ int _prints(va_list l)
 /**
  * _printint - prints an int
  * @l: list of variating arguments
- * Return: length of digits printed
+ * Return: number of characters printed
  */
 int _printint(va_list l)
 {
@@ -70,7 +70,7 @@ int _printint(va_list l)
 /**
  * _invalid_spec - printd invalid specifier
  * @c: Character to print
- * Return: length
+ * Return: number of characters printed
  */
 int _invalid_spec(char c)
 {

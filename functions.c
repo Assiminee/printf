@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _printp - prints the percent sign
- * Return: int
+ * Return: 1
  */
 int _printp(void)
 {
@@ -9,7 +9,7 @@ int _printp(void)
 	return (1);
 }
 /**
- * _strlen:gets length of string
+ * _strlen - gets length of string
  * @s: string to check
  * Return: length of string
  */
@@ -25,11 +25,11 @@ int _strlen(char *s)
 	return (len);
 }
 /**
- * handle_spec - handles speifiers
- * @format: string with format specifier
- * @i: index of string
- * @args: a list of arguments
- * Return: length
+ * handle_spec - prints characters according to a specifier
+ * @format: string with format specifiers
+ * @i: index of format specifier
+ * @args: a list of variadic arguments
+ * Return: number of characters printed
  */
 int handle_spec(const char *format, int i, va_list args)
 {

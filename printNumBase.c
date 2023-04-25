@@ -11,9 +11,9 @@ int _printbin(va_list l)
 	return (_print_in_base(num, 2, " "));
 }
 /**
- *_printx - prints num in hexa lowercase
+ *_printx - prints a number in hexadecimal in lowercase
  * @l: A list of variadic arguments
- *Return: length
+ * Return: number of characters printed
  */
 int _printx(va_list l)
 {
@@ -22,9 +22,9 @@ int _printx(va_list l)
 	return (_print_in_base(num, 16, "0123456789abcdef"));
 }
 /**
- *_printX — prints num in hexa uppercase
+ *_printX — prints a number in hexadecimal in uppercase
  * @l: A list of variadic arguments
- *Return: Iength
+ *Return: number of characters printed
  */
 int _printX(va_list l)
 {
@@ -33,9 +33,9 @@ int _printX(va_list l)
 	return (_print_in_base(num, 16, "0123456789ABCDEF"));
 }
 /**
- * _printO - prints num in octa base
+ * _printO - prints a number in base 8
  * @l: A list of variadix arguments
- * Return: length
+ * Return: number of characters printed
  */
 int _printO(va_list l)
 {
