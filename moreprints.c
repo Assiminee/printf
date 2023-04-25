@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printsixteen - prints number in base sixtenn
  * @n: number to print
@@ -31,12 +32,13 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 	}
 	return (length);
 }
+
 /**
- *_print_in_base - prints in a base
- *@n: the number to be printed in the specified base
- *@base: the base in which the number n is printed
- *@tab: character representations of the digits in the given base
- *Return: length
+ * _print_in_base - prints in a base
+ * @n: the number to be printed in the specified base
+ * @base: the base in which the number n is printed
+ * @tab: character representations of the digits in the given base
+ * Return: length
  */
 int _print_in_base(unsigned int n, unsigned int base, char tab[])
 {

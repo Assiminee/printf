@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdarg.h>
 #include <unistd.h>
-int _printf(const char *format, ...);
+
 /**
  * struct operations - Struct operations
  * @c: The conversion specifier
@@ -16,6 +16,7 @@ typedef struct operations
 	char *c;
 	int (*f)(va_list l);
 } operations;
+int _printf(const char *format, ...);
 int _printint(va_list l);
 int _prints(va_list l);
 int _printc(va_list l);

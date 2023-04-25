@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printc - prints a single char
  * @l: A list of variadic arguments
@@ -11,6 +12,7 @@ int _printc(va_list l)
 	write(1, &c, 1);
 	return (1);
 }
+
 /**
  * _prints - prints a string
  * @l: A list of variadic arguments
@@ -27,6 +29,7 @@ int _prints(va_list l)
 	write(1, s, len);
 	return (len);
 }
+
 /**
  * _printint - prints an int
  * @l: list of variating arguments
@@ -67,6 +70,7 @@ int _printint(va_list l)
 	}
 	return (length);
 }
+
 /**
  * _invalid_spec - printd invalid specifier
  * @c: Character to print
@@ -76,6 +80,7 @@ int _invalid_spec(char c)
 {
 	return (_printp() + _regchar(c));
 }
+
 /**
  * _regchar - prints regular char
  * @c: char to print

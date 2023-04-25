@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printp - prints the percent sign
  * Return: 1
@@ -8,6 +9,7 @@ int _printp(void)
 	write(1, "%", 1);
 	return (1);
 }
+
 /**
  * _strlen - gets length of string
  * @s: string to check
@@ -24,6 +26,7 @@ int _strlen(char *s)
 	}
 	return (len);
 }
+
 /**
  * handle_spec - prints characters according to a specifier
  * @format: string with format specifiers
@@ -68,6 +71,7 @@ int handle_spec(const char *format, int i, va_list args)
 	}
 	return (l);
 }
+
 /**
  * _printU - prints an unsigned int
  * @l: A list of variadic arguments
