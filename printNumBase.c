@@ -24,7 +24,7 @@ int _printx(va_list l)
 /**
  *_printX — prints num in hexa uppercase
  * @l: A list of variadic arguments
- *Return: Iength 
+ *Return: Iength
  */
 int _printX(va_list l)
 {

@@ -54,7 +54,7 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	{
 		_printsixteen(n, r, tab, base);
 	}
-	else if (base == 2)
+	else if (base == 2 || base == 8)
 	{
 		while (r)
 		{
@@ -65,37 +65,4 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 		}
 	}
 	return (length);
-}
-/**
- *_printbin - prints a number in binary
- * @l: A list of variadic arguments
- *Return: length of string printed
- */
-int _printbin(va_list l)
-{
-	unsigned int num = va_arg(l, unsigned int);
-
-	return (_print_in_base(num, 2, " "));
-}
-/**
- *_printx - prints num in hexa lowercase
- * @l: A list of variadic arguments
- *Return: length of string printed
- */
-int _printx(va_list l)
-{
-	unsigned int num = va_arg(l, unsigned int);
-
-	return (_print_in_base(num, 16, "0123456789abcdef"));
-}
-/**
- *_printX — prints num in hexa uppercase
- * @l: A list of variadic arguments
- *Return: Iength of string printed
- */
-int _printX(va_list l)
-{
-	unsigned int num = va_arg(l, unsigned int);
-
-	return (_print_in_base(num, 16, "0123456789ABCDEF"));
 }
