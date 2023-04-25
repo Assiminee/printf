@@ -1,6 +1,20 @@
 #include "main.h"
 
 /**
+ * nonPrintableChar - handles non-printable characters
+ * @value: the ascii value of the non-printable character
+ *
+ * Return: number of characters printed
+ */
+
+int nonPrintableChar(int value)
+{
+	write(1, "\\x", 2);
+	_print_in_base(value, 16, "0123456789ABCDEF");
+	return (4);
+}
+
+/**
  * _printsixteen - prints number in base sixtenn
  * @n: number to print
  * @r: highest power of the given base

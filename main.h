@@ -11,6 +11,7 @@
  * @c: The conversion specifier
  * @f: The function pointer
  */
+
 typedef struct operations
 {
 	char *c;
@@ -32,4 +33,5 @@ int _printX(va_list l);
 int _printO(va_list l);
 int _printbin(va_list l);
 int _printU(va_list l);
+int nonPrintableChar(int value);
 #endif
