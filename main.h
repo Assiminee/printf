@@ -23,5 +23,6 @@ int _printsixteen(unsigned int n, int r, char tab[], unsigned int base);
 int _print_in_base(unsigned int n, unsigned int base, char tab[]);
 int _printx(va_list l);
 int _printX(va_list l);
+int _printO(va_list l);
 int _printbin(va_list l);
 #endif
