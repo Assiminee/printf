@@ -56,7 +56,8 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	
 	while (tmp / base)
 	{
-		r *= base;tmp /= base;
+		r *= base;
+		tmp /= base;
 	}
 	if (base == 16)
 	{
