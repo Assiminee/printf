@@ -52,7 +52,7 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	}
 	if (base == 16)
 	{
-		_printsixteen(n, r, tab, base);
+		length += _printsixteen(n, r, tab, base);
 	}
 	else if (base == 2 || base == 8)
 	{
