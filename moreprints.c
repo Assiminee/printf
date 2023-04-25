@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _printp - prints percent sign
- * return: 1
+ * _printp - prints the percent sign
+ * return: int
  */
-int _printp()
+int _printp(void)
 {
 	write(1, "%", 1);
 	return (1);
 }
 /**
- *_printsixteen - prints in base 16
- *@n: number to print
- *@r: digit to be orint next
- *@tab: digits for conversion
- @base : represents the base in which we print
- *Return: Length
+ * _printsixteen - prints number in base sixtenn
+ * @n: number to print
+ * @r: digit to be orint next
+ * @tab: digits for conversion
+ * @base : represents the base in which we print
+ * Return: number of characters printed
  */
 int _printsixteen(unsigned int n, int r, char tab[], unsigned int base)
 {
@@ -76,9 +76,9 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 	return (length);
 }
 /**
- * _printbin - prints a number in binary
+ *_printbin - prints a number in binary
  * @l: A list of variadic arguments
- * return: length of string printed
+ *return: length of string printed
  */
 int _printbin(va_list l)
 {
@@ -87,9 +87,9 @@ int _printbin(va_list l)
 	return (_print_in_base(num, 2, " "));
 }
 /**
- * _printx - prints num in hexa lowercase
+ *_printx - prints num in hexa lowercase
  * @l: A list of variadic arguments
- * return: length of string printed
+ *return: length of string printed
  */
 int _printx(va_list l)
 {
@@ -98,9 +98,9 @@ int _printx(va_list l)
 	return (_print_in_base(num, 16, "0123456789abcdef"));
 }
 /**
- * printX — prints num in hexa uppercase
+ *_printX — prints num in hexa uppercase
  * @l: A list of variadic arguments
- * return: Iength of string printed
+ *return: Iength of string printed
  */
 int _printX(va_list l)
 {

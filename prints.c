@@ -79,7 +79,7 @@ int _invalid_spec(char c)
 /**
  * _regchar - prints regular char
  * @c: char to print
- * return: 1
+ * Return: 1
  */
 int _regchar(char c)
 {
