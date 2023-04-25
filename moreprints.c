@@ -83,6 +83,7 @@ int _print_in_base(unsigned int n, unsigned int base, char tab[])
 int _printbin(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
+	
 	return (_print_in_base(num, 2, " "));
 }
 /**
@@ -90,4 +91,9 @@ int _printbin(va_list l)
  * @l: A list of variadic arguments
  * return: length of string printed
  */
-
+int _printx(va_list l)
+{
+	unsigned int num = va_arg(l, unsigned int);
+	
+	return (_print_in_base(num, 16, "0123456789abcdef"));
+}
