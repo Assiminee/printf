@@ -56,7 +56,6 @@ int handle_spec(const char *format, int i, va_list args)
 		{"o", _printO},
 		{"u", _printU},
 		{"S", nonPrintableChar},
-		{"p", _printAdrs};
 		{NULL, NULL}
 	};
 
@@ -118,39 +117,4 @@ int _printU(va_list l)
 		r /= 10;
 	}
 	return (length);
-}
-
-/**
- * _printAdrs - prints an adress of var
- * @l: A list of variadic arguments
- *
- * Return: Length of adrs
- */
-
-int _printAdrs(va_list l)
-{
-	char buf[8];
-	void  *adr = va_arg(l, void*);
-	uintptr_t val = (uintptr_t) adr;
-	int i;
-
-	i = 0;
-
-	while (i < 2 * sizeof(adr))
-	{
-		int digit = (val >> ((15 - i) * 4)) & 0xF;
-
-		if (digit < 10)
-		{
-			buf[i] = '0' + digit;
-		}
-		else 
-		{
-			buf[i] = 'A' + (digit - 10);
-		}
-		i++;
-	}
-	buf[i] = '\0';
-	write(1, buf, 2 * sizeof(adr));
-	return (i);
 }

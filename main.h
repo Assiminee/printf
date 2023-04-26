@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <stdint.h>
 
 /**
  * struct operations - Struct operations
@@ -35,5 +34,4 @@ int _printO(va_list l);
 int _printbin(va_list l);
 int _printU(va_list l);
 int nonPrintableChar(va_list l);
-int _printAdrs(va_list l);
 #endif
