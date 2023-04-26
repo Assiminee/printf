@@ -140,7 +140,14 @@ int _printAdrs(va_list l)
 	{
 		int digit = (val >> ((15 - i) * 4)) & 0xF;
 
-		buf[i] = (digit < 10) ? ('0' + digit) : ('a' + digit - 10);
+		if (digit < 10)
+		{
+			buf[i] = '0' + digit;
+		}
+		else 
+		{
+			buf[i] = 'A' + (digit - 10);
+		}
 		i++;
 	}
 	buf[i] = '\0';
