@@ -29,7 +29,7 @@ int _printx(va_list l)
 }
 
 /**
- * _printX — prints a number in hexadecimal in uppercase
+ * _printX — prints uppercase hexadecimal representation of a number
  * @l: A list of variadic arguments
  *
  * Return: number of characters printed
