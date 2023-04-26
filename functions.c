@@ -119,3 +119,28 @@ int _printU(va_list l)
 	}
 	return (length);
 }
+
+/**
+ * _printAdrs - prints an adress of var
+ * @l: A list of variadic arguments
+ *
+ * Return: Length of adrs
+ */
+
+int _printAdrs (va_list l)
+{
+	char buf [8];
+	void  *adr = va_arg(l, void*);
+	int i;
+	i = 0;
+
+	while (i < 2 * sizeof(adr))
+	{
+		int digit = (val >> ((15 - i) * 4)) & 0xF;
+		buf[i] = (digit < 10) ? ('0' + digit) : ('a' + digit - 10);
+		i++;
+	}
+	buf[i] = '\0';
+	write(1, buf, 2 * sizeof(adr));
+	return i;
+}
