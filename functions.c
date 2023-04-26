@@ -131,6 +131,7 @@ int _printAdrs(va_list l)
 {
 	char buf[8];
 	void  *adr = va_arg(l, void*);
+	uintptr_t val = (uintptr_t) adr;
 	int i;
 
 	i = 0;
