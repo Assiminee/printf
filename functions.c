@@ -69,7 +69,7 @@ int handle_spec(const char *format, int i, va_list args)
 			l += ops[j].f(args);
 			break;
 		}
-		if (j == 11)
+		if (j == 10)
 		{
 			write(1, "%", 1);
 			write(1, &format[i], 1);
